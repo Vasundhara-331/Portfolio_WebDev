@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="360" viewBox="0 0 600 360">
+  <rect width="600" height="360" fill="#111827"/>
+  <rect x="0" y="356" width="600" height="4" fill="#6366f1"/>
+  <rect x="40" y="40" width="94" height="26" rx="4" fill="#6366f1"/>
+  <text x="87" y="57" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="700" fill="#ffffff" text-anchor="middle" letter-spacing="1">AI TOOL</text>
+  <text x="40" y="190" font-family="Inter, Arial, sans-serif" font-size="52" font-weight="700" fill="#ffffff">ZYRA</text>
+  <text x="40" y="225" font-family="Inter, Arial, sans-serif" font-size="17" fill="#9aa4b5">AI-Driven Web Development Agent</text>
+</svg>

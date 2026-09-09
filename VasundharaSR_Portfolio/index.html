@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vasundhara S R | Portfolio</title>
+  <meta name="description" content="Portfolio of Vasundhara S R — CSE undergraduate, frontend engineer, and research intern.">
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ===== HEADER / NAV ===== -->
+  <header class="site-header">
+    <nav class="navbar" aria-label="Primary">
+      <a href="#home" class="logo">VSR<span class="dot">.</span></a>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="navMenu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="#home" class="nav-link">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#internships" class="nav-link">Internships</a></li>
+        <li><a href="#education" class="nav-link">Education</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark or light theme" title="Toggle theme">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+      </button>
+      <!-- Default markup shows the moon (light mode active); script.js syncs this to the saved theme on load. -->
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ===== HERO / BANNER ===== -->
+    <section id="home" class="hero">
+      <div class="hero-text">
+        <p class="hero-badge">Open to Internships</p>
+        <h1>Hi, I'm <span class="accent">Vasundhara S R</span></h1>
+        <p class="hero-tagline">Web Developer · Final-Year CSE Undergrad, MBCET '27, Trivandrum</p>
+        <p class="hero-bio">Final-year CSE student building impactful software, exploring new technologies and emerging fields. AI intern at IBS Software, hackathon qualifier, and club CEO — I thrive at the intersection of code and leadership.</p>
+        <div class="hero-cta">
+          <a href="#projects" class="btn btn-primary">View My Work</a>
+          <a href="resume.pdf" class="btn btn-outline" download>Download Resume</a>
+        </div>
+        <ul class="hero-stats" id="statsList"><!-- populated by script.js --></ul>
+      </div>
+      <div class="hero-photo">
+        <img src="images/profile.png" alt="Portrait of Vasundhara S R" width="320" height="320">
+      </div>
+    </section>
+
+    <!-- ===== ABOUT ===== -->
+    <section id="about" class="section">
+      <h2 class="section-title">About Me</h2>
+      <div class="about-grid">
+        <article class="about-summary">
+          <p id="aboutSummary"><!-- populated by script.js --></p>
+
+          <h3 class="sub-title">Learning Path</h3>
+          <ol class="learning-path" id="learningPath"><!-- populated by script.js --></ol>
+        </article>
+
+        <aside class="about-aside" aria-label="Quick facts">
+          <h3 class="sub-title">Quick Facts</h3>
+          <ul class="highlight-list" id="highlightList"><!-- populated by script.js --></ul>
+        </aside>
+      </div>
+    </section>
+
+    <!-- ===== SKILLS ===== -->
+    <section id="skills" class="section alt-bg">
+      <h2 class="section-title">Skills</h2>
+      <div class="skills-grid">
+        <article>
+          <h3 class="sub-title">Tools &amp; Languages</h3>
+          <ul class="chip-list" id="toolsList"><!-- populated by script.js --></ul>
+
+          <h3 class="sub-title">Soft Skills</h3>
+          <ul class="chip-list soft" id="softSkillsList"><!-- populated by script.js --></ul>
+        </article>
+
+        <article>
+          <h3 class="sub-title">Proficiency</h3>
+          <dl class="proficiency-list" id="proficiencyList"><!-- populated by script.js --></dl>
+        </article>
+      </div>
+    </section>
+
+    <!-- ===== PROJECTS ===== -->
+    <section id="projects" class="section">
+      <h2 class="section-title">Projects</h2>
+      <p class="section-subtitle">A selection of my recent work. Filter by technology or click a card for details.</p>
+
+      <div class="filter-bar" id="filterBar" aria-label="Filter projects by technology"><!-- populated by script.js --></div>
+
+      <div class="project-grid" id="projectGrid"><!-- populated by script.js --></div>
+    </section>
+
+    <!-- ===== INTERNSHIPS ===== -->
+    <section id="internships" class="section alt-bg">
+      <h2 class="section-title">Internships</h2>
+      <div class="table-wrap">
+        <table class="data-table">
+          <caption class="sr-only">Internship experience</caption>
+          <thead>
+            <tr>
+              <th scope="col">Organisation</th>
+              <th scope="col">Role</th>
+              <th scope="col">Duration</th>
+              <th scope="col">Description</th>
+            </tr>
+          </thead>
+          <tbody id="internshipsBody"><!-- populated by script.js --></tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ===== EDUCATION ===== -->
+    <section id="education" class="section">
+      <h2 class="section-title">Education</h2>
+      <div class="table-wrap">
+        <table class="data-table">
+          <caption class="sr-only">Education history</caption>
+          <thead>
+            <tr>
+              <th scope="col">Institution</th>
+              <th scope="col">Degree</th>
+              <th scope="col">Duration</th>
+              <th scope="col">Description</th>
+            </tr>
+          </thead>
+          <tbody id="educationBody"><!-- populated by script.js --></tbody>
+        </table>
+      </div>
+
+      <h3 class="sub-title">Certifications</h3>
+      <ul class="cert-list" id="certList"><!-- populated by script.js --></ul>
+    </section>
+
+    <!-- ===== CONTACT ===== -->
+    <section id="contact" class="section alt-bg">
+      <h2 class="section-title">Contact Me</h2>
+      <div class="contact-grid">
+        <article class="contact-form-wrap">
+          <form id="contactForm" novalidate>
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" placeholder="Your full name" autocomplete="name">
+              <span class="error-msg" id="nameError"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="text" id="email" name="email" placeholder="you@example.com" autocomplete="email">
+              <span class="error-msg" id="emailError"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" placeholder="Tell me about the opportunity..."></textarea>
+              <span class="error-msg" id="messageError"></span>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Send Message</button>
+            <p class="form-success" id="formSuccess" role="status"></p>
+          </form>
+        </article>
+
+        <aside class="contact-aside" aria-label="Direct contact details">
+          <h3 class="sub-title">Reach Me Directly</h3>
+          <ul class="contact-links">
+            <li><a href="mailto:vasundharasr.331@gmail.com"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16v16H4z"></path><path d="m4 6 8 7 8-7"></path></svg> vasundharasr.331@gmail.com</a></li>
+            <li><a href="tel:+919539010497"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"></path></svg> +91 95390 10497</a></li>
+            <li><a href="https://github.com/Vasundhara-331" target="_blank" rel="noopener"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg> GitHub</a></li>
+            <li><a href="https://www.linkedin.com/in/vasundhara-s-r/" target="_blank" rel="noopener"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4V8h4v1.5A5.99 5.99 0 0 1 16 8z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg> LinkedIn</a></li>
+            <li><a href="resume.pdf" download><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><path d="M7 10l5 5 5-5"></path><path d="M12 15V3"></path></svg> Download Resume</a></li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer">
+    <p>&copy; <span id="year"></span> Vasundhara S R. Built with HTML5, CSS3 &amp; vanilla JavaScript.</p>
+    <ul class="footer-socials">
+      <li><a href="https://github.com/Vasundhara-331" target="_blank" rel="noopener">GitHub</a></li>
+      <li><a href="https://www.linkedin.com/in/vasundhara-s-r/" target="_blank" rel="noopener">LinkedIn</a></li>
+      <li><a href="#home">Back to top</a></li>
+    </ul>
+  </footer>
+
+  <button id="scrollTopBtn" class="scroll-top" aria-label="Scroll to top" title="Scroll to top">↑</button>
+
+  <!-- ===== PROJECT MODAL ===== -->
+  <div class="modal-overlay" id="modalOverlay">
+    <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="modal-close" id="modalClose" aria-label="Close dialog">&times;</button>
+      <img id="modalImage" src="" alt="">
+      <h3 id="modalTitle"></h3>
+      <p id="modalSubtitle" class="modal-subtitle"></p>
+      <p id="modalDescription"></p>
+      <ul class="chip-list" id="modalTags"></ul>
+      <div class="modal-links" id="modalLinks"></div>
+    </div>
+  </div>
+
+  <script src="js/data.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>

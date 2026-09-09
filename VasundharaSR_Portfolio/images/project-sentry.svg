@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="360" viewBox="0 0 600 360">
+  <rect width="600" height="360" fill="#111827"/>
+  <rect x="0" y="356" width="600" height="4" fill="#f59e0b"/>
+  <rect x="40" y="40" width="128" height="26" rx="4" fill="#f59e0b"/>
+  <text x="104" y="57" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="700" fill="#111827" text-anchor="middle" letter-spacing="1">AUTOMATION</text>
+  <text x="40" y="190" font-family="Inter, Arial, sans-serif" font-size="50" font-weight="700" fill="#ffffff">Sentry</text>
+  <text x="40" y="225" font-family="Inter, Arial, sans-serif" font-size="17" fill="#9aa4b5">Smart Document Automation for KMRL</text>
+</svg>
