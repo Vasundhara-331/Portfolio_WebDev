@@ -1,14 +1,9 @@
-// data.js
-// Single source of truth for all portfolio content.
-// Keeping data separate from rendering logic (script.js) satisfies the
-// "data-driven rendering" requirement — cards are never hardcoded in HTML.
 
 const profile = {
   name: "Vasundhara S R",
   title: "Web Developer",
   tagline: "Final-Year CSE Undergrad · MBCET '27 · Trivandrum",
-  badge: "Open to Internships",
-  bio: "Final-year CSE student building impactful software, exploring new technologies and emerging fields. AI intern at IBS Software, hackathon qualifier, and club CEO — I thrive at the intersection of code and leadership.",
+  bio: "Final-year CSE student building impactful software, exploring new technologies and emerging fields. AI enthusiast and Chief Vibe Officer at Catalyst IEDC - I thrive at the intersection of code and leadership.",
   summary: "I am a final-year Computer Science Engineering student with hands-on experience across four internships spanning AI engineering, full-stack development, and cryptography research. With experience in building impactful projects and internships at organisations like IBS Software and Triassic Solutions, I have honed my programming and problem-solving skills. I thrive in collaborative environments and utilize my technical and leadership abilities to deliver innovative solutions effectively.",
   email: "vasundharasr.331@gmail.com",
   phone: "+919539010497",
@@ -27,13 +22,13 @@ const stats = [
 ];
 
 const highlights = [
-  { title: "What I Build", desc: "Web applications, IoT systems, fintech tools, AI-powered automation." },
-  { title: "What I Research", desc: "Lattice-based cryptography, cyber security, blockchain & IoT." },
-  { title: "How I Lead", desc: "CEO of Catalyst IEDC, Vice-Chairperson of Adyatva, Co-lead of CSI Creative Wing." },
+  { title: "What I Build", desc: "Web applications, IoT systems, Fintech tools, AI-powered automation." },
+  { title: "What I Research", desc: "Artificial Intelligence" },
+  { title: "How I Lead", desc: "Chief Vibe Officer ,former CEO of Catalyst IEDC" },
 ];
 
 // Ordered list — a learning path (sequence matters).
-const learningPath = ["Machine Learning", "System Design", "Scalable Architecture", "Advanced React"];
+const learningPath = ["Artificial Intelligence", "System Design", "Scalable Architecture"];
 
 // Unordered list — tools & languages (order doesn't matter).
 const skillTools = [
